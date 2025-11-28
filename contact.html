@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Raj Mahal</title>
+    <link rel="icon" href="images/logo.png">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./contact.css" rel="stylesheet">
+    <link href="./rooms.html">
+    <link href="./index.html">
+    <link href="./category.html">
+</head>
+<body>
+    <header id="head">
+        <nav class="navbar">
+            <div class="logo">
+                <img id="logo" src="images/logo.png">
+                <h1 id="name">Hotel Raj Mahal</h1>
+            </div>
+            <div>
+                <a href="index.html" id="headLinks">Home</a>
+                <a href="rooms.html" id="headLinks">Rooms</a>
+                <a href="gallery.html" id="headLinks">Gallery</a>
+                <a href="category.html" id="headLinks">Category</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <footer id="foot" style="padding-top: 50px;">
+        <div id="details">
+            <div id="division">
+
+                <div id="imgCont">
+                    <img id="contactImg" src="images/contactImg4.jpg">
+                </div>
+
+                <div id="division1">
+                    <h2 id="main">Contact Us</h2>
+                    
+                        <div id="contactDetails">Email: hotelrajmahal@gmail.com</div>
+                        <div id="contactDetails">Phone: 07162-232425</div>
+                        <div id="contactDetails">Address: Raj Path,Jaipur,Rajasthan</div>
+                
+                        </br></br></br>
+                
+                    <h2 id="main">Follow us</h2>
+                    
+                        <div><a id="contactMedia" href="https://www.gmail.com">Gmail</a></div>
+                        <div><a id="contactMedia" href="https://www.instagram.com">Instagram</a></div>
+                        <div><a id="contactMedia" href="https://www.whatsapp.com">WhatsApp</a></div>
+                    
+                </div>
+
+                <div id="division2">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h3 id="main">Get Membership of our Hotel</h3>
+                        <p>Get access to latest offers</br>Get extra 10% OFF</br>Free meal on every stay</p>
+                        <div>
+
+                            <input type="text" id="name1" placeholder="Name" onkeyup="validateName()" required>
+                            <span id="name-er"></span>
+            
+                            <input type="email" id="email" placeholder="Email" onkeyup="validateEmail()" required>
+                            <span id="email-er"></span>
+                            
+                            <input type="text" id="phone" placeholder="Phone Number" onkeyup="validatePhone()" required>
+                            <span id="phone-er"></span>
+                        
+                        </div>
+                        <button id="button" type="submit" onclick="return validateForm()" onclick="alert('Thankyou for choosing Hotel Raj Mahal , We will contact you shortly')">Subscribe</button>
+                        <span id="submit-er"></span>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                //Here enter the email of hotel and password
+                Username : "srajandongre2905@gmail.com",
+                Password : "password",
+                //Here enter the email of the hotel 
+                To : 'hotelrajmahal@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone no.: " + document.getElementById("phone").value
+            }).then(
+                message => alert("Email Submitted Successfully, We will contact you shortly")
+            );
+        }
+    </script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

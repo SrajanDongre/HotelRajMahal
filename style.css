@@ -1,0 +1,533 @@
+body{
+    margin: 0%;
+    background-color: rgb(236, 236, 150);
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    margin-right: 0px;
+    margin-bottom: -7px;
+}
+
+#head{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image:linear-gradient(70deg,rgb(53, 10, 10),rgb(153, 39, 39),rgb(53,10,10));
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#name{
+    color: yellow;
+    text-align:inherit;
+    font-size:x-small;
+    font-family: sans;
+    margin-left: 0px;
+}
+
+#headLinks{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+#headLinks:hover{
+    color: rgb(250, 211, 39);
+}
+
+#home{
+    position: relative;
+    overflow: hidden;
+    inset: 120px 0px;
+    margin-bottom: 100px;
+    height: 81vh;
+    width: 100%;
+    background-image: url(images/HeroImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#opac{
+    position:absolute;
+    inset: 0px 300px;
+    height: 78vh;
+    background-color: black;
+    padding: 10px;
+    opacity:70%;
+    width: 750px;
+}
+
+#wel{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    color: rgb(255, 196, 0);
+    padding-top: 220px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#about{
+    text-align: center;
+    padding: 120px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    grid-column: 2;
+    display: flex;
+    gap: 100px;
+}
+
+#guard{
+    width: 450px;
+    border-radius: 20px;
+}
+
+#bio{
+    width: 1200px;
+    text-align: justify;
+    font-size: large;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(85, 15, 15);
+}
+
+#rooms{
+    padding: 120px;
+    padding-top: 0px;
+}
+
+#bg{
+    background-image: linear-gradient(rgb(236, 236, 150),white);
+}
+
+#category{
+    display: flex;
+    padding: 120px;
+    padding-top: 0px;
+    gap: 150px;
+    justify-content: space-evenly;
+}
+
+#gallary{
+    grid-column: 2;
+    display: flex;
+    gap: 50px;
+}
+
+#catimg{
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid rgb(255, 217, 0);
+    box-shadow: 0 4px 10px;
+}
+
+#gallerybtn{
+    width: 120px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(245, 191, 76);
+    background-color: rgb(241, 241, 118);
+    color: brown;
+    font-weight: bold;
+    display: none;
+}
+
+#gallerybtn:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px rgba(247, 247, 112, 0.918);
+}
+
+#list{
+    text-align: justify;
+    color: rgb(85, 15, 15);
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#break{
+    margin-left: 200px;
+    color: brown;
+    font-weight: bold;
+}
+
+#back{
+    background-color: rgb(236, 236, 150) ;
+}
+
+#heading{
+    color: rgb(255, 187, 0);
+    text-align: center;
+    padding: 100px;
+    padding-top: 100px;
+    font-family: sans;
+}
+
+#cont{
+    display:flex;
+    text-align: center;
+    justify-content:center;
+    gap: 100px;
+}
+
+#card{
+    width:300px;
+    height: 420px;
+    border-radius: 20px;
+    background-image:linear-gradient(70deg,rgb(53, 10, 10),rgb(153, 39, 39),rgb(53,10,10));
+    margin-bottom: 50px;
+    color: rgb(255, 208, 0);
+    padding: 20px;
+    
+}
+
+#card:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+#imag{
+    height:180px;
+    width: 280px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#Roomdetails{
+    color: rgb(255, 187, 0);
+}
+
+#price{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+#bookbtn{
+    width: 100px;
+    height:30px;
+    border-radius: 10px;
+    border: 2px solid rgb(245, 191, 76);
+    background-color: rgb(241, 241, 118);
+    color: brown;
+    font-weight: bold;
+
+}
+
+#bookbtn:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px rgba(247, 247, 112, 0.918);
+}
+
+#rooms{
+    background-image: linear-gradient(rgb(236, 236, 150),white,rgb(236, 236, 150),white,rgb(236, 236, 150),white,rgb(236, 236, 150));
+}
+
+hr{
+    color: brown;
+    border-top: 2px solid;
+}
+
+#testimonials{
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+}
+
+#testCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#test{
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 100px;
+    background-color:rgb(236, 236, 150) ;
+    color:rgb(85, 15, 15);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#testimg{
+    width:100% ;
+    height: 150px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px;
+    margin-bottom: 25px;
+}
+
+.review{
+    font-style: italic;
+    margin: 0px 10px;
+}
+
+.testName{
+    font-weight: bold;
+}
+
+#foot{
+    background-color: rgb(68, 5, 5);
+    height: 450px;
+    text-align: center;
+    color: white;
+    padding-bottom: 0px;
+}
+
+#details{
+    text-align: left;
+    justify-content: center;
+}
+
+#division{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 100px;
+}
+
+#division1{
+    width: 300px;
+}
+
+.d1links{
+    text-decoration: none;
+    font-size: x-large;
+    color:white;
+}
+
+.d1links:hover{
+    color: rgb(255, 196, 0);
+}
+
+#contactDetails{
+    margin-bottom: 10px;
+}
+
+#contactMedia{
+    text-decoration: none;
+    color: white;
+}
+
+#contactMedia:hover{
+    color:rgb(255,196,0);
+}
+
+#input{
+    width: 240px;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    font-size: medium;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(245, 245, 103);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#input:hover{
+    border-color: yellow;
+}
+
+input::placeholder{
+    color: white;
+}
+
+#button{
+    width: 265px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(102, 24, 24);
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(90deg,rgb(241, 241, 118),rgb(250, 250, 247),rgb(241,241,118));
+}
+
+#button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(247, 247, 112, 0.918);
+}
+
+#button:after{
+    background-image: linear-gradient(90deg,rgb(241, 241, 118),rgb(241, 241, 53),rgb(241,241,118));
+}
+
+#rights{
+    background-color: brown;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 952px){
+
+    .logo #name{
+        display: none;
+    }
+    #headLinks{
+        font-size: large;
+        margin: 0px 10px;
+    }
+}
+@media (max-width: 858px){
+    #head{
+        height: 80px;
+        padding: 5px;
+        text-align: center;
+        align-items: center;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #headLinks{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 575px){
+    #headLinks{
+        font-size: smaller;
+        margin: 0px 5px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #home{
+        inset: 80px 0px;
+    }
+    #opac{
+        width: 80%;
+        height: 60%;
+        inset: 80px 30px;
+    }
+    #wel h1{
+        font-size: x-large;
+    }
+    #wel p{
+        font-size: small;
+    }
+    #about{
+        display: block;
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    #guard{
+        width: 80%;
+    }
+    #bio{
+        width: 90%;
+        font-size: medium;
+        font-weight: light;
+    }
+    #heading{
+        padding: 20px;
+    }
+    #rooms{
+        justify-content: center;
+        text-align: center;
+        padding: 60px;
+    }
+    #cont{
+        display: block;
+        padding: 20px;
+        gap: 20px;
+    }
+    #bg{
+        justify-content: center;
+        text-align: center;
+    }
+    #category{
+        padding: 20px;
+    }
+    #gallary{
+        display: none;
+    }
+    #gallerybtn{
+        align-self: center;
+        display: unset;
+        margin: 20px;
+    }
+    #testemonials{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #test{
+        width: 60px;
+        height: 200px;
+    }
+    #testimg{
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .review{
+        font-size: xx-small;
+    }
+    .testName{
+        font-size: xx-small;
+    }
+    #foot{
+        height: 250px;
+    }
+    #division{
+        padding: 10px;
+    }
+    #d1vision1{
+        width: 100px;
+    }
+    .d1links{
+        font-size: small;
+    }
+    #main{
+        font-size: medium;
+    }
+    #contactDetails{
+        font-size: x-small;
+    }
+    #contactMedia{
+        font-size: x-small;
+    }
+    #division1 p{
+        font-size: x-small;
+    }
+    #button{
+        width: 100px;
+        padding: 5px;
+        font-size: x-small;
+    }
+    #rights{
+        font-size: x-small;
+        padding: 5px;
+    }
+}

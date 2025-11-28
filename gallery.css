@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(236, 236, 150);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+
+.gallery img{
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(114, 28, 28);
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bookform{
+    height: 100%;
+    padding: 66px 80px;
+    background-image: linear-gradient(70deg,rgb(53, 10, 10),rgb(153, 39, 39),rgb(53,10,10));
+}
+
+.formcont{
+    display: flex;
+}
+
+.mainform{
+    width: 600px;
+    height: 400px;
+    padding: 50px 100px;
+    color: rgb(107, 22, 22);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid rgb(255, 174, 0);
+    border-right: none;
+    background-color:rgb(236, 236, 150) ;
+}
+
+#FieldSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input{
+    width: 200px;
+    padding: 10px;
+    color: brown;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 174, 0);
+}
+
+.form-input::placeholder{
+    color: brown;
+}
+
+.selectroom{
+    width: 220px;
+    padding: 10px;
+    color: brown;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 174, 0);
+}
+
+#formbtn{
+    width: 225px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 174, 0);
+    background-color: rgb(241, 241, 118);
+    color: brown;
+    font-weight: bold;
+}
+
+#formbtn:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px rgba(20, 20, 20, 0.918);
+}
+
+#bookImg{
+    width: 400px;
+    height: 500px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid rgb(255, 174, 0);
+    border-left: none;
+}
+
+@media (max-width: 575px){
+    .bookform{
+        height: 100vh;
+        padding: 10%;
+    }
+    #bookImg{
+        display: none;
+    }
+    .mainform{
+        width: 80%;
+        border-radius: 20px;
+        padding: 50px;
+        border: 2px solid  rgb(255, 174, 0);
+        border-bottom: none;
+    }
+    .form-input{
+        width: 100px;
+    }
+    .selectroom{
+        width: 125px;
+        margin-right: 40px;
+    }
+    #formbtn{
+        width: 125px;
+    }
+}

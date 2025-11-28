@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Raj Mahal</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="bookform.css">
+</head>
+<body>
+    <form class="bookform">
+        <div class="formcont">
+            <div class="mainform">
+                <div id="FieldSection">
+                    <div>
+                        <h3>First Name</h3>
+                        <input id="Fname" class="form-input" type="text" placeholder="Enter First Name" onkeyup="validateFName()" required>
+                        <span id="Fname-er"></span>
+                    </div>
+                    <div>
+                        <h3>Last Name</h3>
+                        <input id="Lname" class="form-input" type="text" placeholder="Enter Last Name" onkeyup="validateLName()" required>
+                        <span id="Lname-er"></span>
+                    </div>  
+                </div>
+                <div id="FieldSection">
+                    <div>
+                        <h3>Check-in Date</h3>
+                        <input id="CheckIn" class="form-input" type="date" placeholder="DD/MM/YYYY" onkeyup="validateCheckIn()" required>
+                        <span id="CheckIn-er"></span>
+                    </div>
+                    <div>
+                        <h3>Check-out Date</h3>
+                        <input id="CheckOut" class="form-input" type="date" placeholder="DD/MM/YYYY" onkeyup="validateCheckOut()" required>
+                        <span id="CheckOut-er"></span>
+                    </div>  
+                </div>
+                <div>
+                    <h3>Number of Guests</h3>
+                </div>
+                <div id="FieldSection">
+                    
+                    <div>
+                        <input id="Guest" class="form-input" type="number" placeholder="Number of Adults" required>
+                        <span id="Guest-er"></span>
+                    </div>
+                    <div>
+                        <input id="Guest" class="form-input" type="number" placeholder="Number of Children" required>
+                        <span id="Guest-er"></span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Select Room</h3>
+                </div>
+                <div id="FieldSection">
+                    <div>
+                        <select id="Room" class="selectroom" required>
+                            <option value="">Select Room</option>
+                            <option value="Maharaja Suite">Maharaja Suite</option>
+                            <option value="Maharani Suite">Maharani Suite</option>
+                            <option value="Twin Room">Twin Room</option>
+                            <option value="Deluxe Room">Deluxe Room</option>
+                            <option value="Premium Room">Premium Room</option>
+                            <option value="Standard Room">Standard Room</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id="formbtn"  onclick="return validateForm();">Book Now</button>
+                        <span id="submit-er"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <img id="bookImg" src="images/contactImg2.webp">
+            </div>
+        </div>
+    </form>
+
+    <script src="bookform.js"></script>
+</body>
+</html>
